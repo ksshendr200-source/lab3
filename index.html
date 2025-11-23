@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сельскохозяйственный симулятор</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Сельскохозяйственный симулятор</h1>
+    <p>Выращивайте растения, управляйте влажностью и развивайте свою ферму!</p>
+  </header>
+
+  <div class="game-container">
+    <div class="grid-container">
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <div class="controls">
+      <div class="tool-section">
+        <h2>Инструменты</h2>
+        <div class="tools">
+          <div class="tool active" id="shovel">
+            <div>🔄</div>
+            <div>Лопата</div>
+          </div>
+          <div class="tool" id="bucket">
+            <div>🚰</div>
+            <div>Ведро</div>
+          </div>
+          <div class="tool" id="marsh-plant">
+            <div>🌿</div>
+            <div>Болотник</div>
+          </div>
+          <div class="tool" id="potato">
+            <div>🥔</div>
+            <div>Картошка</div>
+          </div>
+          <div class="tool" id="cactus">
+            <div>🌵</div>
+            <div>Кактус</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h2>Информация</h2>
+        <div class="info-panel">
+          <p>Выберите клетку для просмотра информации</p>
+          <div class="plant-info" id="plant-info" style="display: none;">
+            <h3 id="plant-name"></h3>
+            <p id="plant-moisture"></p>
+            <p id="plant-growth"></p>
+            <div class="progress-bar">
+              <div class="progress" id="growth-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="next-turn" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+          Следующий ход
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h2>Как играть</h2>
+    <ul>
+      <li><strong>Лопата</strong> - меняет тип клетки (земля/вода)</li>
+      <li><strong>Ведро</strong> - изменяет влажность выбранной клетки</li>
+      <li><strong>Семена</strong> - посадка растений на клетки земли</li>
+      <li>Растения растут, когда влажность подходит для них</li>
+      <li>Нажимайте "Следующий ход" для роста растений</li>
+    </ul>
+    <p><strong>Требования к влажности:</strong></p>
+    <ul>
+      <li>Болотник: высокая влажность (>70%)</li>
+      <li>Картошка: средняя влажность (30-70%)</li>
+      <li>Кактус: низкая влажность (<30%)</li>
+    </ul>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

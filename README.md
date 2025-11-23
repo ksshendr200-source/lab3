@@ -41,10 +41,10 @@
 - Картошка: влажность 30–70%
 - Кактус: влажность < 30%
 
-## Проверка кода
-Для проверки линтером (ESLint) и форматирования (Prettier):
-```bash
-npx eslint js/modules --ext .js
-npx prettier --check .
-
+## Проверка кода 
+- Установите ESLint/Prettier глобально или локально.
+- - Запустите:
+  - - `npx eslint js/modules --ext .js`
+    - - `npx prettier --check .`
+      
 https://ksshendr200-source.github.io/lab3/

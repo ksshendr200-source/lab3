@@ -43,8 +43,8 @@
 
 ## Проверка кода 
 - Установите ESLint/Prettier глобально или локально.
-- - Запустите:
-  - - `npx eslint js/modules --ext .js`
-    - - `npx prettier --check .`
+-  Запустите:
+  - `npx eslint js/modules --ext .js`
+    - `npx prettier --check .`
       
 https://ksshendr200-source.github.io/lab3/
